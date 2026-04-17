@@ -1,14 +1,15 @@
 body{
   font-family: Arial;
   margin: 0;
-  background: 
+  background: pink
   text-align: centre;
 }
 
 header{
-  background:
+  background: pink
     color: red, pink;
   padding: 15px;
+  border-line: black;
 }
 
 nav a{
@@ -23,10 +24,11 @@ section{
 }
 
 footer{
-  background:
+  background:pink
     color: red;
   padding: 10px;
   margin-top: 20px;
+  border-line: black;
 }
 
 img{
