@@ -6,8 +6,8 @@ body{
 }
 
 header{
-  background: pink
-    color: red;
+  background: pink;
+  color: red;
   padding: 15px;
   border-bottom: 2px solid black;
 }
@@ -32,7 +32,7 @@ section{
 }
 
 footer{
-  background:pink
+  background:pink;
   color: darkred;
   padding: 10px;
   margin-top: 20px;
@@ -42,7 +42,7 @@ footer{
 img{
   width: 250px;
   margin: 10px;
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .profile{
