@@ -17,9 +17,27 @@ nav a:hover{
 }
 
 section{
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+
+    h1, h2{
+        color: darkred;
 }
 
+    p{
+        color: darkgray;
+        line-height: 1.6;
+    }
+
+    .highlight{
+        margin-top: 30px;
+        color: brightpink;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
 footer{
     background: pink;
     color: red;
