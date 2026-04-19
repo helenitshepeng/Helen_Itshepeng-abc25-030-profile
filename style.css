@@ -1,82 +1,85 @@
 body{
-  font-family:Arial sans-serif;
-  margin:0;
-  background:pink;
-  text-align:center;
+  font-family: Arial sans-serif;
+  margin: 0;
+  background: linear-gradient (to right, softpink, lightpink);
+  text-align: center;
 }
 
 header{
-  background:pink;
-  color:red;
-  padding:15px;
-  border-line:2px solid black;
+  background: deeplovered;
+  color: white;
+  padding: 15px;
+  border-bottom: 3px winered;
 }
 
 nav a{
-  color:pink;
-  margin:10px;
-  text-decoration:none;
-  font-weight:bold;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover{
   text-decoration:underline;
+  color: lightpink;
 }
 
 .hero img{
-  width:60%;
-  max-width:400px;
+  width: 60%;
+  max-width: 400px;
 
 section{
   padding:20px;
 }
 
 footer{
-  background:pink;
-  color:red;
-  padding:10px;
-  margin-top:20px;
-  border-line:2px solid black;
+  background: deeplovered;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-line: 2px solid winered;
 }
 
 img{
-  width:250px;
-  margin:10px;
-  border-radius:10px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .profile{
-  display:inline-block;
-  margin:15px;
-  width:200px;
-  padding:10px;
-  background:pink;
-  border-radius:10px;
+  display: inline-block;
+  margin: 15px;
+  width: 200px;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  border: 2px solid lightpink;
+  box-shadow: 0 4px 10px
 }
 
 form{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input, textarea{
-  margin:10px;
-  padding:10px;
-  width:250px;
-  border-radius:5px;
-  border:1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
-button{
-  padding:10px 20px;
-  border:none;
-  background:red;
-  color:white;
-  cursor:pointer;
-  border-radius:5px;
+button, input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background: romanticred;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
-button-hover{
-  background:pink;
+button: hover input[type="submit"] :hover {
+  background: deeplovered;
 }
