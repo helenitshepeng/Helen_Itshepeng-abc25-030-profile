@@ -1,16 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: light pink;
-    color: dark gray;
+    background: #ffe4e9;
+    color: dark #333;
     text-align: center;
 }
 
 header{
-    background: bright pink;
+    background: #ff4d6d;
     color: white;
     padding: 15px;
-    border-line: 2px solid red;
+    border-bottom: 3px solid #b3003c;
     text-align: center;
 }
 
@@ -47,7 +47,7 @@ main{
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -55,7 +55,7 @@ main{
 
 .subtitle{
     font-size: 14px;
-    color: mediumgray;
+    color: #777;
     margin-bottom: 20px;
 }
 
@@ -73,14 +73,14 @@ form{
 label{
     display: block;
     margin-bottom: 5px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 input, select, textarea{
-    width: 250%;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid silver gray;
+    border: 1px solid #ccc;
     font-size: 14px;
 }
 
@@ -93,35 +93,19 @@ radio-group label{
     font-weight: normal;
 }
 
-.btn{
-    background: pink;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
 button{
     padding: 10px;
     border: none;
     border-radius: 8px;
-    background: darkred;
+    background: #ff4d6d;
     color: white;
     cursor: pointer;
-    flex: 1;
-    margin: 5px;
+    flex: 1px;
+    margin-top: 10px;
 }
 
-button: hover{
-    background: burgundy;
-}
-
-button{
-    background: deep red;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+button:hover{
+    background: #cc0033;
 }
 
 section{
@@ -130,34 +114,37 @@ section{
     max-width: 800px;
     margin: auto;
 
-    h1, h2{
-        color: darkred;
+   section h1, 
+   secion h2{
+        color: #b3003c;
 }
 
-    p{
-        color: darkgray;
+    secion p{
+        color: #444;
         line-height: 1.6;
     }
 
     .highlight{
-        margin-top: 30px;
-        color: brightpink;
+        margin-top: 20px;
+        color: #ff4d6d;
         font-weight: bold;
         font-size: 20px;
     }
     
 footer{
-    background: pink;
-    color: red;
+    background: #ffb6c1;
+    color: #b3003c;
     padding: 10px;
     margin-top: 20;
     border-line: 2px solid red;
 }
 
 img{
-    width: 250px;
+    width: 100px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
 }
 
 .profile{
@@ -165,7 +152,6 @@ img{
     width: 200px;
     margin: 10px;
     padding: 10px;
-    background: white;
     border-radius: 10px;
 }
 
@@ -176,4 +162,13 @@ img{
         display: inline-block;
         border-radius: 10px;
         box-shadow:  0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .profile-card h3{
+        margin: 10px;
+    }
+
+    .profile-card p{
+        color: #777;
+        font-size: 14px;
     }
