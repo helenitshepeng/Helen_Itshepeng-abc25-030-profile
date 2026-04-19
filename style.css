@@ -1,20 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: pink;
+    background: light pink;
+    color: dark gray;
     text-align: center;
 }
 
 header{
-    background: pink;
-    color: red;
+    background: bright pink;
+    color: white;
     padding: 15px;
     border-line: 2px solid red;
+    text-align: center;
 }
 
 nav a:hover,
 nav a.active{
     text-decoration: underline;
+}
+
+nav a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/couple.jpg') center/cover;
+    height: 80vh;
+    display: flex;
+    justify-conent: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 
 main{
@@ -28,8 +47,8 @@ main{
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px
-    width: 100%
+    box-shadow: 0 8px 20px;
+    width: 100%;
     max-width: 400px;
     text-align: center;
 }
@@ -38,6 +57,12 @@ main{
     font-size: 14px;
     color: mediumgray;
     margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-group{
@@ -51,13 +76,11 @@ label{
     font-weight: 600;
 }
 
-input,
-select,
-textarea{
-    width: 100%;
+input, select, textarea{
+    width: 250%;
     padding: 10px;
-    border-radius: 8px;
-    border: 1px solid 
+    border-radius: 5px;
+    border: 1px solid silver gray;
     font-size: 14px;
 }
 
@@ -70,10 +93,12 @@ radio-group label{
     font-weight: normal;
 }
 
-.button-group{
-    margin-top: 20px;
-    display: flex;
-    justify-conent: space-between;
+.btn{
+    background: pink;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 button{
@@ -91,9 +116,12 @@ button: hover{
     background: burgundy;
 }
 
-button.secondary{
-    background: lightgray;
-    color: charcoalgray;
+button{
+    background: deep red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 section{
@@ -140,3 +168,12 @@ img{
     background: white;
     border-radius: 10px;
 }
+
+    .profile-card{
+        background: white;
+        padding: 15px;
+        margin: 10px;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow:  0 5px 15px rgba(0,0,0,0.1);
+    }
