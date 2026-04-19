@@ -132,7 +132,6 @@ footer{
     color: #b3003c;
     padding: 10px;
     margin-top: 20px;
-    border-line: 2px solid red;
 }
 
 img{
@@ -144,7 +143,7 @@ img{
 }
 
     .profile-card{
-        background: deepred;
+        background: white;
         padding: 15px;
         margin: 15px;
         display: inline-block;
