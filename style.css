@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #ffe4e9;
-    color: dark #333;
+    color:  #333;
     text-align: center;
 }
 
@@ -89,10 +89,6 @@ input, select, textarea{
     gap: 10px;
 }
 
-radio-group label{
-    font-weight: normal;
-}
-
 button{
     padding: 10px;
     border: none;
@@ -135,7 +131,7 @@ footer{
     background: #ffb6c1;
     color: #b3003c;
     padding: 10px;
-    margin-top: 20;
+    margin-top: 20px;
     border-line: 2px solid red;
 }
 
@@ -147,25 +143,17 @@ img{
     object-fit: cover;
 }
 
-.profile{
-    display: inline-block;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
     .profile-card{
-        background: white;
+        background: red;
         padding: 15px;
-        margin: 10px;
+        margin: 15px;
         display: inline-block;
-        border-radius: 10px;
+        border-radius: 15px;
         box-shadow:  0 5px 15px rgba(0,0,0,0.1);
     }
 
     .profile-card h3{
-        margin: 10px;
+        margin: 10px 0 5px;
     }
 
     .profile-card p{
