@@ -12,8 +12,88 @@ header{
     border-line: 2px solid red;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
     text-decoration: underline;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-container{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px
+    width: 100%
+    max-width: 400px;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 14px;
+    color: mediumgray;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid 
+    font-size: 14px;
+}
+
+.radio-group{
+    display: flex;
+    gap: 10px;
+}
+
+radio-group label{
+    font-weight: normal;
+}
+
+.button-group{
+    margin-top: 20px;
+    display: flex;
+    justify-conent: space-between;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: darkred;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    margin: 5px;
+}
+
+button: hover{
+    background: burgundy;
+}
+
+button.secondary{
+    background: lightgray;
+    color: charcoalgray;
 }
 
 section{
