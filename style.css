@@ -1,38 +1,40 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #ffe4e9;
-    color:  #333;
+    background: linear-gradient(to right, #1a0005, #33000a);
+    color:  #white;
     text-align: center;
 }
 
 header{
-    background: #ff4d6d;
+    background: #66001a;
     color: white;
     padding: 15px;
-    border-bottom: 3px solid #b3003c;
+    border-bottom: 3px solid #ff1a4d;
     text-align: center;
 }
 
 nav a:hover,
 nav a.active{
+    text-shadow: 0 0 8px #ff4d6d;
+    color: #ffffff;
     text-decoration: underline;
 }
 
 nav a{
-    color: white;
-    margin: 0 10px;
+    color: #ffccd5;
+    margin: 0 12px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .hero{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/couple.jpg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(102,0,26,0.7)), url('images/couple.jpg') center/cover;
     height: 80vh;
     display: flex;
-    justify-conent: center;
+    justify-content: center;
     align-items: center;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
@@ -45,17 +47,19 @@ main{
 
 .form-container{
     background: white;
+    color: #33000a;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(255,0,80,0.4);
     width: 100%;
+    margin: auto;
     max-width: 400px;
     text-align: center;
 }
 
 .subtitle{
     font-size: 14px;
-    color: #777;
+    color: #990033;
     margin-bottom: 20px;
 }
 
@@ -80,8 +84,8 @@ input, select, textarea{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+    border: 1px solid #ff4d6d;
+    font-size: 10px;
 }
 
 .radio-group{
@@ -90,47 +94,50 @@ input, select, textarea{
 }
 
 button{
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 8px;
-    background: #ff4d6d;
+    border-radius: 25px;
+    background: linear-gradient(to right, #ff1a4d, #990033);
     color: white;
     cursor: pointer;
     flex: 1px;
     margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover{
-    background: #cc0033;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff4d6d;
 }
 
 section{
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     max-width: 800px;
     margin: auto;
 
    section h1, 
    secion h2{
-        color: #b3003c;
+        color: #ff4d6d;
 }
 
     secion p{
-        color: #444;
+        color: #ffccd5;
         line-height: 1.6;
     }
 
     .highlight{
         margin-top: 20px;
-        color: #ff4d6d;
+        color: #ff1a4d;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 22px;
     }
     
 footer{
-    background: #ffb6c1;
-    color: #b3003c;
-    padding: 10px;
+    background: #000;
+    color: #ff4d6d;
+    padding: 15px;
     margin-top: 20px;
 }
 
@@ -143,19 +150,28 @@ img{
 }
 
     .profile-card{
-        background: white;
-        padding: 15px;
-        margin: 15px;
+        background: linear-gradient(145deg, #ffffff, #ffe6eb);
+        color: #33000a;
+        padding: 20px;
+        margin: 20px;
         display: inline-block;
-        border-radius: 15px;
-        box-shadow:  0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        box-shadow:  0 10px 25px rgba(255,0,80,0.3);
     }
 
     .profile-card h3{
         margin: 10px 0 5px;
+        color: #66001a;
     }
 
     .profile-card p{
-        color: #777;
+        color: #990033;
         font-size: 14px;
+    }
+
+    .profile-card img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 3px solid #ff1a4d;
     }
