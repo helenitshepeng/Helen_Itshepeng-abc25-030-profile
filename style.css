@@ -1,19 +1,19 @@
 body{
   font-family: Arial sans-serif;
   margin: 0;
-  background: darkpink;
+  background: lightpink;
   text-align: center;
 }
 
 header{
-  background: darkred;
+  background: lightpink;
   color: red;
   padding: 15px;
   border-bottom: 2px solid black;
 }
 
 nav a{
-  color: darkred;
+  color: burgundy;
   margin: 10px;
   text-decoration: none;
   font-weight: bold;
@@ -32,8 +32,8 @@ section{
 }
 
 footer{
-  background:darkred;
-  color: darkred;
+  background:lightpink;
+  color: red;
   padding: 10px;
   margin-top: 20px;
   border-top:2px solid black;
@@ -67,12 +67,12 @@ input, textarea{
 button{
   padding:10px 20px;
   border:none;
-  background:pink;
+  background:red;
   color:white;
   cursor:pointer;
   border-radius:5px;
 }
 
 button-hover{
-  background:darkpurple;
+  background:burgundy;
 }
