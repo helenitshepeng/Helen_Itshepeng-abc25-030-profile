@@ -108,7 +108,7 @@ input, select, textarea{
     border-radius: 25px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(255, 0, 80, 0.4);
-    transition: 0.3s;
+    transition: transform 0.3s ease, opacity 0.5s ease;
     position: relative;
 }
 
@@ -151,13 +151,13 @@ button:hover{
 .swipe-right{
     transform: translateX(400px) rotate(20 deg);
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .swipe-left{
     transform:translateX(-400px) rotate(-20 deg);
     opacity:0;
-    transition:0.5s;
+    transition:0.5s ease;
 }
 
 .chat-box{
