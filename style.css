@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(to right, #1a0005, #33000a);
-    color:  #white;
+    color:  white;
     text-align: center;
 }
 
@@ -124,11 +124,11 @@ section{
     margin: auto;
 
    section h1, 
-   secion h2{
+   section h2{
         color: #ff4d6d;
 }
 
-    secion p{
+    section p{
         color: #ffccd5;
         line-height: 1.6;
     }
