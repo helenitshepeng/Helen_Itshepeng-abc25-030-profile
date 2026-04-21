@@ -6,12 +6,6 @@ body {
     text-align: center;
 }
 
-@media(min-width:1024px) {
-    .text{
-        color:white;
-    }
-}
-
 header{
     background: #66001a;
     color: white;
