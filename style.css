@@ -149,13 +149,13 @@ button:hover{
 }
 
 .swipe-right{
-    transform: translateX(400px) rotate(20 deg);
+    transform: translateX(400px) rotate(20deg);
     opacity: 0;
     transition: 0.5s ease;
 }
 
 .swipe-left{
-    transform:translateX(-400px) rotate(-20 deg);
+    transform:translateX(-400px) rotate(-20deg);
     opacity:0;
     transition:0.5s ease;
 }
@@ -179,7 +179,7 @@ button:hover{
 }
 
 .chat-messages {
-    max-heaight: 150px;
+    max-height: 150px;
     overflow-y: auto;
     margin-bottom: 10px;
     text-align: left;
@@ -215,14 +215,6 @@ footer{
     color: #ff4d6d;
     padding: 15px;
     margin-top: 20px;
-}
-
-img{
-    width: 100px;
-    margin: 10px;
-    border-radius: 50%;
-    height: 100px;
-    object-fit: cover;
 }
 
     .profile-card{
