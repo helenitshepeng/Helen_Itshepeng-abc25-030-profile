@@ -91,6 +91,126 @@
 
   <script>
 
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMate | Matches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Matches</h1>
+      <nav>
+        <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="contact.html">Contact</a>
+         <a href="gallery.html">Gallery</a>
+         <a href="matches.html" class="active">Matches</a>
+         <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+  <main>
+    <div class="matches-container">
+
+      <div class="match-card">
+        <img src="image/user1.jpg">
+        <h3>Dexter, 25</h3>
+        <p class="match-percentage">90% Match</p>
+        <p>Loves music, Artist</p>
+
+        <div class="buttons">
+          <button onclick="dislike(this)">❌</button>
+          <button onclick="like(this, 'Dexter')">❤️</button>
+        
+      </div>
+       </div>
+
+      <div class="match-card">
+        <img src="image/user2.jpg">
+        <h3>Julian, 21</h3>
+        <p class="match-percentage">85% Match</p>
+        <p>Adventurous, loves travelling</p>
+
+        <div class="buttons">
+          <button onclick="dislike(this)">❌</button>
+          <button onclick="like(this, 'Julian')">❤️</button>
+          
+        </div>
+      </div>
+
+      <div class="match-card">
+        <img src="image/user3.jpg">
+        <h3>Vanessa, 22</h3>
+        <p class="match-percentage">73%</p>
+        <p>Bookworm, Coffee lover</p>
+
+        <div class="button">
+          <button onclick="dislike(this)">❌</button>
+          <button onclick="like(this, 'Vanessa')">❤️</button>
+          
+        </div>
+      </div>
+
+      <div class="match-card">
+        <img src="image/user4.jpg">
+        <h3>Laure, 27</h3>
+        <p class="match-percentage">70%</p>
+        <p>Model with passion of fashion</p>
+
+        <div class="button">
+           <button onclick="dislike(this)">❌</button>
+          <button onclick="like(this, 'Laurel')">❤️</button>
+          
+        </div>    
+      </div>
+    </div>
+  </main>
+
+    <div id="chatBox" class="chat-box">
+      <h3 id="chatName"></h3>
+      <p>Hello there!</p>
+      <input type="text" placeholder="Type a message...">
+      <button onclick="closeChat()">Close</butoon>  
+      
+    </div>
+
+    <footer>
+      <p>&copy; 2026 MatchMate</p>
+    </footer>
+
+  <script>
+    function like(btn, name) {
+      const card = btn.closest('.match-card');
+      card.classList.add('swipe-right');
+
+      setTimeout(() => {
+        card.style.display = "none";
+        openChat(name);
+      }, 500);
+    }
+
+    function dislike(btn, name) {
+      const card = btn.closest('.match-card');
+      card.classList.add('swipe-left');
+
+      setTimeout(() => {
+        card.style.display = "none";
+      openChat(name);
+      }, 500);
+    }
+
+    function openChat(name) {
+      document.getElementById("chatBox").style.display="block";
+      document.getElementById("chatName").innerText="Chat with" + name;
+    }
+
+    function closeChat() {
+      document.getElementById("chatBox").style.display="none";
+    }
+
 function sendMessage() {
   const input = document.getElementById("chatInput");
   const message = input.value;
