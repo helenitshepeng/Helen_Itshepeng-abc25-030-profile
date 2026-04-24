@@ -100,13 +100,12 @@
       }, 500);
     }
 
-    function dislike(btn, name) {
+    function dislike(btn) {
       const card = btn.closest('.match-card');
       card.classList.add('swipe-left');
 
       setTimeout(() => {
         card.style.display = "none";
-      openChat(name);
       }, 500);
     }
 
@@ -153,9 +152,10 @@ function sendMessage() {
 }
 
       document.getElementById("chatInput").addEventListener("keypress", function (e){
-          sendMessage():
-      }
-                                                            });                                                           
+          if (e.key === "Enter") {
+          sendMessage(): 
+          }
+      });     
                                                             
 </script>
 </body>
