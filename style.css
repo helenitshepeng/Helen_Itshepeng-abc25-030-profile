@@ -110,13 +110,15 @@ input, select, textarea{
     box-shadow: 0 10px 30px rgba(255, 0, 80, 0.4);
     transition: transform 0.3s ease, opacity 0.5s ease;
     position: relative;
+    border: 10px solid red;
 }
 
-.matches-card img {
+.match-card img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
     border-radius: 20px;
+    display: block;
 }
 
 button{
