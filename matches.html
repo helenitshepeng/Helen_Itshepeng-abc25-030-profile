@@ -78,8 +78,9 @@
 
     <div id="chatBox" class="chat-box">
       <h3 id="chatName"></h3>
-      <p>Hello there!</p>
+        <div id="chatMessages" class="chat-messages"></div>
       <input type="text" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
       <button onclick="closeChat()">Close</butoon>  
       
     </div>
@@ -89,34 +90,39 @@
     </footer>
 
   <script>
-    function like(btn, name) {
-      const card = btn.closest('.match-card');
-      card.classList.add('swipe-right');
 
-      setTimeout(() => {
-        card.style.display = "none";
-        openChat(name);
-      }, 500);
-    }
+function sendMessage() {
+  const input = document.getElementById("chatInput");
+  const message = input.value;
 
-    function dislike(btn) {
-      const card = btn.closest('.match-card');
-      card.classList.add('swipe-left');
+  if (message.trim() === "") return;
 
-      setTimeout(() => {
-        card.style.display = "none";
-      openChat(name);
-      }, 500);
-    }
+  const chat = document.getElementById("chatMessages");
 
-    function openChat(name) {
-      document.getElementById("chatBox").style.display="block";
-      document.getElementById("chatName").innerText="Chat with" + name;
-    }
+  
+  const msg = document.createElement("p");
+  msg.innerText = "You: " + message;
+  msg.style.background = "#ffccd5";
+  msg.style.padding = "8px";
+  msg.style.borderRadius = "10px";
+  msg.style.margin = "5px 0";
 
-    function closeChat() {
-      document.getElementById("chatBox").style.display="none";
-    }
-  </script>
+  chat.appendChild(msg);
+
+  input.value = "";
+
+  
+  setTimeout(() => {
+    const reply = document.createElement("p");
+    reply.innerText = "Them: That's interesting 😊";
+    reply.style.background = "#eee";
+    reply.style.padding = "8px";
+    reply.style.borderRadius = "10px";
+    reply.style.margin = "5px 0";
+
+    chat.appendChild(reply);
+  }, 1000);
+}
+</script>
 </body>
 </html>
